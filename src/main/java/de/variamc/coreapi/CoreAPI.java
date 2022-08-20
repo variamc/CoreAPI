@@ -11,6 +11,7 @@ import java.io.IOException;
 public class CoreAPI extends JavaPlugin {
 
     private static CoreAPI instance;
+    private static String prefix = "§8» §eVaria§6MC §r";
 
     @Override
     public void onLoad() {
@@ -50,5 +51,9 @@ public class CoreAPI extends JavaPlugin {
 
     public static CoreAPI getInstance() {
         return instance;
+    }
+
+    public static String getPrefix() {
+        return prefix;
     }
 }
