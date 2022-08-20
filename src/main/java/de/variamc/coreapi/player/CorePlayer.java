@@ -1,5 +1,6 @@
 package de.variamc.coreapi.player;
 
+import de.variamc.coreapi.coins.CoinAPI;
 import de.variamc.coreapi.language.LanguageAPI;
 import de.variamc.coreapi.utils.DataSource;
 import org.bukkit.Bukkit;
@@ -45,6 +46,26 @@ public class CorePlayer {
 
     public void setLanguage(String language) {
         LanguageAPI.setLanguage(uuid.toString(), language);
+    }
+
+    public void getCoins() {
+        CoinAPI.getCoins(uuid.toString());
+    }
+
+    public void setCoins(int coins) {
+        CoinAPI.setCoins(uuid.toString(), coins);
+    }
+
+    public void addCoins(int coins) {
+        CoinAPI.addCoins(uuid.toString(), coins);
+    }
+
+    public void resetCoins() {
+        CoinAPI.resetCoins(uuid.toString());
+    }
+
+    public void removeCoins(int coins) {
+        CoinAPI.removeCoins(uuid.toString(), coins);
     }
 
     public String getName() {
