@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'net.minecrell.plugin-yml.bukkit' version "0.5.1"
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
 group 'de.variamc'
@@ -7,13 +9,33 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    maven { url = uri("https://repo.papermc.io/repository/maven-public/") }
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    compileOnly("io.papermc.paper:paper-api:1.19.2-R0.1-SNAPSHOT")
+    implementation("com.zaxxer:HikariCP:5.0.2")
 }
 
-test {
-    useJUnitPlatform()
+java {
+    manifest {
+        attributes "Main-Class": "de.variamc.coreapi.CoreAPI"
+    }
+}
+
+tasks {
+    build {
+        dependsOn(shadowJar)
+    }
+}
+
+bukkit {
+    name = "CoreAPI"
+    apiVersion = "1.19"
+    authors = [
+            "VariaMC",
+            "Kaseax"
+    ]
+    main = "de.variamc.coreapi.CoreAPI"
+    version = getVersion().toString()
 }
