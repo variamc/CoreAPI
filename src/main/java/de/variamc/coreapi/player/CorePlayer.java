@@ -1,5 +1,6 @@
 package de.variamc.coreapi.player;
 
+import de.variamc.coreapi.language.LanguageAPI;
 import de.variamc.coreapi.utils.DataSource;
 import org.bukkit.Bukkit;
 
@@ -39,11 +40,11 @@ public class CorePlayer {
     }
 
     public void getLanguage() {
-
+        LanguageAPI.getLanguage(uuid.toString());
     }
 
-    public void setLanguage() {
-
+    public void setLanguage(String language) {
+        LanguageAPI.setLanguage(uuid.toString(), language);
     }
 
     public String getName() {
