@@ -16,6 +16,11 @@ public class CoinAPI {
 
     }
 
+    /**
+     * Get the Coins of an uuid
+     * @param uuid
+     * @return an int with the coins amount from the uuid
+     */
     public static int getCoins(String uuid) {
         try(Connection con = DataSource.getConnection()) {
             PreparedStatement Stmt = con.prepareStatement("SELECT coins FROM players WHERE uuid = ?");
