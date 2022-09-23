@@ -1,6 +1,7 @@
 package de.variamc.coreapi;
 
 import de.variamc.coreapi.utils.Config;
+import net.axay.kspigot.main.KSpigot;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.IOException;
@@ -8,14 +9,15 @@ import java.io.IOException;
 /**
  * Class created by Kaseax on 2022
  */
-public class CoreAPI extends JavaPlugin {
+public class CoreAPI extends KSpigot {
 
     private static CoreAPI instance;
     private static String prefix = "§8» §eVaria§6MC §r";
 
     @Override
-    public void onLoad() {
+    public void load() {
         instance = this;
+
         Config config = new Config("config.yml", getDataFolder());
         if(!config.getConfig().contains("mysql.host")) {
             config.getConfig().set("mysql.host", "localhost");
@@ -40,12 +42,12 @@ public class CoreAPI extends JavaPlugin {
     }
 
     @Override
-    public void onEnable() {
+    public void startup() {
 
     }
 
     @Override
-    public void onDisable() {
+    public void shutdown() {
 
     }
 
