@@ -26,7 +26,11 @@ java {
 }
 
 tasks {
-    build {
+    compileJava {
+        options.encoding = "UTF-8"
+        options.release.set(17)
+    }
+    assemble {
         dependsOn(shadowJar)
     }
 }
