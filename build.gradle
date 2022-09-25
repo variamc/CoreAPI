@@ -5,7 +5,7 @@ plugins {
     id 'maven-publish'
 }
 
-group 'de.variamc'
+group 'io.github.variamc'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -22,7 +22,7 @@ dependencies {
 
 java {
     manifest {
-        attributes "Main-Class": "de.variamc.coreapi.CoreAPI"
+        attributes "Main-Class": "io.github.variamc.coreapi.CoreAPI"
     }
 }
 
@@ -55,6 +55,6 @@ bukkit {
             "VariaMC",
             "Kaseax"
     ]
-    main = "de.variamc.coreapi.CoreAPI"
+    main = "io.github.variamc.coreapi.CoreAPI"
     version = getVersion().toString()
 }

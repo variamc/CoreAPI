@@ -1,6 +1,6 @@
-package de.variamc.coreapi.coins;
+package io.github.variamc.coreapi.coins;
 
-import de.variamc.coreapi.utils.DataSource;
+import io.github.variamc.coreapi.utils.DataSource;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

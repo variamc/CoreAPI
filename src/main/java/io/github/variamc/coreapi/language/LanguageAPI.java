@@ -1,6 +1,6 @@
-package de.variamc.coreapi.language;
+package io.github.variamc.coreapi.language;
 
-import de.variamc.coreapi.utils.DataSource;
+import io.github.variamc.coreapi.utils.DataSource;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

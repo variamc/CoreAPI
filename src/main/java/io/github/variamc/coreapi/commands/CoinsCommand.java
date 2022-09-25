@@ -1,8 +1,8 @@
-package de.variamc.coreapi.commands;
+package io.github.variamc.coreapi.commands;
 
-import de.variamc.coreapi.CoreAPI;
-import de.variamc.coreapi.coins.CoinAPI;
-import de.variamc.coreapi.language.LanguageAPI;
+import io.github.variamc.coreapi.CoreAPI;
+import io.github.variamc.coreapi.coins.CoinAPI;
+import io.github.variamc.coreapi.language.LanguageAPI;
 import org.apache.commons.lang3.LocaleUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;

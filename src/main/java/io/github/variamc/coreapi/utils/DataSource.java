@@ -1,8 +1,8 @@
-package de.variamc.coreapi.utils;
+package io.github.variamc.coreapi.utils;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-import de.variamc.coreapi.CoreAPI;
+import io.github.variamc.coreapi.CoreAPI;
 
 import java.sql.Connection;
 import java.sql.SQLException;

@@ -1,4 +1,4 @@
-package de.variamc.coreapi.utils;
+package io.github.variamc.coreapi.utils;
 
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;

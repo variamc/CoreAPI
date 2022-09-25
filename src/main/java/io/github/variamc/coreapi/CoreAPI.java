@@ -1,8 +1,7 @@
-package de.variamc.coreapi;
+package io.github.variamc.coreapi;
 
-import de.variamc.coreapi.utils.Config;
+import io.github.variamc.coreapi.utils.Config;
 import net.axay.kspigot.main.KSpigot;
-import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.IOException;
 

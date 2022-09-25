@@ -1,8 +1,8 @@
-package de.variamc.coreapi.player;
+package io.github.variamc.coreapi.player;
 
-import de.variamc.coreapi.coins.CoinAPI;
-import de.variamc.coreapi.language.LanguageAPI;
-import de.variamc.coreapi.utils.DataSource;
+import io.github.variamc.coreapi.coins.CoinAPI;
+import io.github.variamc.coreapi.language.LanguageAPI;
+import io.github.variamc.coreapi.utils.DataSource;
 import org.bukkit.Bukkit;
 
 import java.sql.Connection;
