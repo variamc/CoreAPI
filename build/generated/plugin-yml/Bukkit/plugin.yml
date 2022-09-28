@@ -1,0 +1,7 @@
+name: CoreAPI
+version: "null"
+main: io.github.variamc.coreapi.CoreAPI
+authors:
+ - VariaMC
+ - Kaseax
+api-version: 1.19
