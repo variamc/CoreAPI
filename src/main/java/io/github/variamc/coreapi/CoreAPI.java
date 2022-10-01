@@ -2,19 +2,20 @@ package io.github.variamc.coreapi;
 
 import io.github.variamc.coreapi.utils.Config;
 import net.axay.kspigot.main.KSpigot;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.IOException;
 
 /**
  * Class created by Kaseax on 2022
  */
-public class CoreAPI extends KSpigot {
+public class CoreAPI extends JavaPlugin {
 
     private static CoreAPI instance;
     private static String prefix = "§8» §eVaria§6MC §r";
 
     @Override
-    public void load() {
+    public void onLoad() {
         instance = this;
 
         Config config = new Config("config.yml", getDataFolder());
@@ -41,12 +42,12 @@ public class CoreAPI extends KSpigot {
     }
 
     @Override
-    public void startup() {
+    public void onEnable() {
 
     }
 
     @Override
-    public void shutdown() {
+    public void onDisable() {
 
     }
 
